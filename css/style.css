@@ -1,3 +1,4 @@
+/* Quitaremos todos los margins y paddings existentes para poder trabajar desde cero */
 body{
     padding: 0;
     margin: 0;
@@ -5,6 +6,7 @@ body{
     background: #fcfcfc;
 }
 
+/* Pondremos todos los estilos que afectaran a todo el header  */
 header{
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
@@ -12,12 +14,15 @@ header{
 
 }
 
+
+/* Y algunos estilos más concretos */
 .seccion-header{
     padding: 3px 15px;
     font-weight: 600;
     transition: background-color .4s ease;
 }
 
+/* El hover para que cuando pasemos el ratón por encima cambie el fondo  */
 .seccion-header:hover{
     background-color: #adadad;
 }
@@ -26,6 +31,7 @@ header{
     background-color: #adadad;
 }
 
+/* Aquí están todos los estilos de la presentación de la página */
 .presentacion{
     display: flex;
     justify-content: center;
@@ -59,6 +65,7 @@ h4{
     font-size: 20px;
 }
 
+/* He creado un separados que siempre que pongamos esta clase a un div tendremos una línea para separar secciones */
 .separador{
     max-width: 70%;
     min-width: 300px;
@@ -66,6 +73,8 @@ h4{
     border: 1.4px solid #777777;
 }
 
+/* Aquí están los estilos que he usado en el grid, no están al completo ya que los más personalizados como los colores
+de cada div los he escrito en línea para hacerlo más compacto */
 .contenedor-grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -99,6 +108,7 @@ b{
     padding: 0 0 60px 0;
 }
 
+/* Un footer simple para finalizar la página */
 footer{
     border-top: 1px solid black;
     font-family: Arial, Helvetica, sans-serif;
@@ -106,6 +116,9 @@ footer{
     justify-content: center;
 }
 
+
+/* Y para finalizar la actividad unos pequeños cambios para que cuando la página este en dispositivos mobile que se ajuste a estos
+cambiando cosas como el grid-template-columns/rows para que dejen de estar cuatro en cada fila y sea uno por fila */
 @media screen and (max-width: 700px) {
     .contenedor-grid{
         display: grid;
